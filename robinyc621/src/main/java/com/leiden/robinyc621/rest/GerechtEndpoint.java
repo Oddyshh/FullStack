@@ -34,28 +34,39 @@ public class GerechtEndpoint {
 		System.out.println("hij doet het goed");
 		Gerecht pizza = new Gerecht();
 		Gerecht pasta = new Gerecht();
-		ArrayList<Gerecht> gerechten = new ArrayList();
+		Gerecht curry = new Gerecht();
+		ArrayList<Gerecht> gerechten = new ArrayList<Gerecht>();
+		
+		
 		gerechten.add(pizza);
-		
-		
-		pizza.setId(1);
+		//pizza.setId(1);
 		pizza.setAantalIngredienten(4);
 		pizza.setNaam("Pizza Funghi");
 		pizza.setBereidingstijd(15);
 		pizza.setOmschrijving("Pizza met champignons");
 		pizza.setVegetarisch(true);
 
-		//gs.def(pizza);
+		gs.def1(pizza);
 		
 		gerechten.add(pasta);
-		pasta.setId(1);
+		//pasta.setId(2);
 		pasta.setAantalIngredienten(4);
 		pasta.setNaam("Pasta Carbonara");
 		pasta.setBereidingstijd(15);
 		pasta.setOmschrijving("Pasta met room, ei en spekjes");
 		pasta.setVegetarisch(false);
 
-		gs.def(gerechten);
+		gs.def1(pasta);
+		
+		gerechten.add(curry);
+		//curry.setId(3);
+		curry.setAantalIngredienten(10);
+		curry.setNaam("Thaise Curry Penang Kai");
+		curry.setBereidingstijd(45);
+		curry.setOmschrijving("Thaise Curry met Kip");
+		curry.setVegetarisch(false);
+		
+		gs.def1(curry);
 		
 		return gerechten;
 	}

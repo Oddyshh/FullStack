@@ -31,4 +31,8 @@ public class GerechtService {
 		}
 		gr.saveAll(gerechten);
 	}
+	
+	public void def1(Gerecht gerecht) {
+		gr.save(gerecht);
+	}
 }
